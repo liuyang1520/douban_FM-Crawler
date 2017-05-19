@@ -35,12 +35,12 @@ class douban_FM:
             pass
 
     def multiPage(self):
-            num = 0
-            while num <= 10000:
-                self.currentPage = 100000 + num
-                self.getData()
-                num = num + 1
-            #self.txtFile.close()
+        num = 2396
+        while num <= 10000:
+            self.currentPage = 100000 + num
+            self.getData()
+            num = num + 1
+        #self.txtFile.close()
 
 douban = douban_FM()
 douban.multiPage()
